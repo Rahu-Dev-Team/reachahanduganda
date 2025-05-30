@@ -1,190 +1,128 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "@vidstack/react/player/styles/base.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { impacts } from "../constants";
 import ImpactDetails from "../components/ImpactDetails";
 import { motion } from "framer-motion";
-import line from "../assets/Artboard – 5.png";
-import top from "../assets/Group 157.png";
-import cover from "../assets/paleblue.jpg";
-import backdrop from "../assets/Artboard – 6.jpg";
-import home6 from "../assets/Artboard – 14.jpg";
 import { MediaPlayer, MediaProvider } from "@vidstack/react";
-import program from "../assets/program-1.jpg";
 import { Poster } from "@vidstack/react";
 import { PlayButton } from "@vidstack/react";
 import { PauseIcon, PlayIcon } from "@vidstack/react/icons";
+import home6 from "../assets/Artboard – 3.jpg";
+import Section2 from "../components/home/Section2";
+import Impactmap from "../components/Impact/ImpactMap";
+
+import program from "../assets/program-1.jpg";
+import heroImage from "../assets/teamcover.jpg";
 
 const Impact = () => {
   return (
-    <div>
+    <div className="font-sans bg-white text-gray-800">
+      {/* Navbar */}
       <div className="content-center text-center w-full">
-        <motion.img
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 0.2, delay: 0.25 }}
-          src={backdrop}
-          alt="backdrop"
-          className="w-full relative lg:mt-9 mt-20 object-cover"
-        />
         <div className="-mt-[40%] mb-10 absolute w-full">
           <NavBar />
         </div>
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 0.5, delay: 0.25 }}
-          className=" content-center text-center w-full mb-20 "
-        >
-          <h1 className="h1 -mt-[22%] mb-4 lg:text-7xl poppinsSemiBold text-darkBlue leading-normal lg:-mt-[22%] absolute w-full">
-            Our impacts
-          </h1>
-          <h3 className="xl:text-xl md:body-1 body-2 md:px-[6%] xl:px-0 -mt-[10%] lg:text-3xl lg:-mt-[16%] poppinsRegular text-opacity-80 leading-normal w-full text-darkBlue absolute">
-            Each of RAHU's program, campaign and projects is
-            <br /> tailored to impact nuggets of information
-          </h3>
-        </motion.div>
-
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 0.8, delay: 0.25 }}
-        >
-          <img
-            src={line}
-            alt="line"
-            className="w-full -mt-[4%] lg:-mt-40 object-cover relative"
-          />
-        </motion.div>
-
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 1, delay: 0.25 }}
-          className="w-full px-3 xl:px-20 rounded-[30px] mt-2 relative"
-        >
-          <img
-            src={cover}
-            alt="cover"
-            className="w-full mt-0 xl:h-[600px] xl:object-cover rounded-[30px]"
-          />
-        </motion.div>
-        <div className="absolute xl:h-[600px] justify-center items-center left-[2%] md:left-[5%] lg:left-[7%] xl:left-[10%]">
-          <img
-            src={top}
-            alt="cover"
-            className="w-full xl:p-7 -mt-[48.7%] sm:-mt-[48%] md:-mt-[49.5%] lg:-mt-[47%] xl:-mt-[49.3%] object-cover md:h-[400px] xl:h-[800px] z-100 justify-center float-right"
-          />
-        </div>
       </div>
 
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.5, delay: 0.25 }}
-        className="grid grid-cols-1 w-full px-5 lg:px-20 justify-items-center items-center mt-[10%] lg:mt-[2%]"
+      {/* Hero Section */}
+      <section
+        className="relative h-[90vh] bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="h-[250px] lg:h-[700px] w-full xl:mt-[2%]">
-          <div className="text-black border-2 border-gray-600 w-[100%] h-[200px] md:[350px] lg:h-[700px] rounded-[30px] justify-items-center">
-            <MediaPlayer
-              className="w-full h-[200px] md:h-[350px] lg:h-[698px] rounded-[30px] bg-black"
-              playsInline
-              title="Sprite Fight"
-              src="https://www.youtube.com/watch?v=r_ZXOoemDgs&pp=ygUKcmVhY2hhaGFuZA%3D%3D"
-              load="eager"
-            >
-              <MediaProvider>
-                <Poster
-                  className="absolute object-cover inset-0 block h-full w-full bg-black rounded-md opacity-0 transition-opacity data-[visible]:opacity-90 [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
-                  src={program}
-                  alt="Reachahand video"
-                />
-              </MediaProvider>
-              <PlayButton className="group ring-sky-400 relative inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-md outline-none ring-inset hover:bg-white/20 data-[focus]:ring-4">
-                <PlayIcon
-                  size={100}
-                  className="justify-items-center relative bg-white rounded-full hidden group-data-[paused]:block"
-                />
-                <PauseIcon
-                  size={100}
-                  className="justify-items-center relative bg-white rounded-full group-data-[paused]:hidden"
-                />
-              </PlayButton>
-            </MediaPlayer>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative z-10 text-center text-white">
+          <h1 className="text-6xl font-bold tracking-wide">
+            How we are making change{" "}
+          </h1>
+          <p className="text-xl mt-2">For young People</p>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center bg-white">
+        <div>
+          <p className="text-4xl font-bold font-audrey text-center text-blue-800 uppercase mb-2">
+            The Impact
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
+            Our Promise To Uphold SRHR
+          </h2>
+          <p className="text-gray-600 text-sm mb-4">
+            Among Young people and Uganda at large for the{" "}
+            <span className="text-red-600 font-bold">15+ Years</span>
+          </p>
+          <p className="text-gray-600 text-base">
+            Reach a Hand Uganda (RAHU) started in 2011 as a weekend outreach
+            program founded by Humphrey Nabimanya to address HIV/AIDS and other
+            sexual health issues among young people.
+          </p>
+          <p className="text-gray-600 text-base">
+            RAHU inspires youth by introducing them to diverse role models and
+            mentors in fields like medicine, education, theatre, and creative
+            arts entrepreneurship.
+          </p>
+        </div>
+
+        <div className="text-black border-2 border-gray-600 w-full h-[200px] md:h-[350px] lg:h-[700px] rounded-[30px]">
+          <MediaPlayer
+            className="w-full h-full rounded-[30px] bg-black"
+            playsInline
+            title="Sprite Fight"
+            src="https://www.youtube.com/watch?v=r_ZXOoemDgs&pp=ygUKcmVhY2hhaGFuZA%3D%3D"
+            load="eager"
+          >
+            <MediaProvider>
+              <Poster
+                className="absolute inset-0 h-full w-full object-cover rounded-md opacity-0 transition-opacity data-[visible]:opacity-90"
+                src={program}
+                alt="Reachahand video"
+              />
+            </MediaProvider>
+            <PlayButton className="group ring-sky-400 relative inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-md outline-none ring-inset hover:bg-white/20 data-[focus]:ring-4">
+              <PlayIcon
+                size={100}
+                className="bg-white rounded-full hidden group-data-[paused]:block"
+              />
+              <PauseIcon
+                size={100}
+                className="bg-white rounded-full group-data-[paused]:hidden"
+              />
+            </PlayButton>
+          </MediaPlayer>
+        </div>
+      </section>
+
+      {/* Section2 and Map Side by Side */}
+      <div>
+        <h2 className="text-4xl font-bold font-audrey text-center text-blue-800">
+          OUR REACH ACROSS UGANDA
+        </h2>
+        <div className="w-screen flex flex-col md:flex-row">
+          {/* Left: Section2 */}
+
+          <div className="w-full h-full md:w-1/2  text-4xl text-white [&_*]:!text-white [&_*]:!text-4xl pb-10">
+            <Section2 />
+          </div>
+          {/* Right: Map */}
+          <div className="w-full md:w-2/3  pt-20 pb-10">
+            <Impactmap />
           </div>
         </div>
-      </motion.div>
-
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 },
+      </div>
+      <div
+        className="w-full  h-full relative rounded-[30px] overflow-hidden px-5 lg:px-20 mt-10 lg:mt-[2%] mb-[4%] flex items-center justify-center"
+        style={{
+          backgroundImage: `url(${home6})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "500px", // Adjust height as needed
         }}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.5, delay: 0.25 }}
-        className="flex flex-col lg:grid lg:grid-cols-1 w-full px-5 lg:px-20 justify-items-center items-center md:mt-40 lg:mt-20"
       >
-        <div className="lg:flex lg:flex-cols-2 gap-6 lg:h-[90%] w-full lg:mb-10">
-          <div className="bg-color-darkBlue text-white p-1 lg:p-0 lg:w-[40%] rounded-[30px] lg:pl-10 lg:pr-30 ">
-            <p className="poppinsSemiBold h1 lg:text-7xl text-color-gold leading-normal text-center lg:text-left lg:mt-20">
-              lets talk figures
-            </p>
-            <p className="body-1 p-4 text-center lg:text-left poppinsRegular md:w-full lg:text-2xl leading-normal lg:mt-5 lg:mb-20">
-              RAHU inspires youth by introducing them to <br /> diverse role
-              models and mentors in fields like <br /> medicine, education,
-              theatre and creative arts entrepreneurship
-            </p>
-          </div>
-          <div className="bg-color-gold text-white border-2 mt-5 lg:mt-0 border-gray-400 lg:w-[60%] justify-between rounded-[30px] p-5 lg:p-20">
-            <div className="grid grid-cols-2 gap-8 lg:gap-6 justify-end md:ml-20 w-full">
-              {impacts.map((impact) => (
-                <ImpactDetails
-                  key={impact.label}
-                  word={impact.word}
-                  total={impact.total}
-                  label={impact.label}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </motion.div>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 z-0 rounded-[30px]" />
 
-      <div className="flex flex-cols-3 gap-2 w-[100%] justify-center mb-[4%] rounded-[30px] px-5 lg:px-20 mt-10 lg:mt-[2%]">
-        <motion.img
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.5, delay: 0.25 }}
-          src={home6}
-          alt="HOME6"
-          className="object-stretch xl:object-cover w-full relative rounded-[30px] h-[250px] xl:h-0"
-        />
+        {/* Content */}
         <motion.div
           variants={{
             hidden: { opacity: 0, y: 75 },
@@ -193,33 +131,33 @@ const Impact = () => {
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="w-[80%] lg:w-[60%] content-center text-center justify-center items-center align-middle absolute lg:mt-[8%]"
+          className="relative z-10 text-center text-black w-full flex flex-col items-center"
         >
-          <h1 className="xl:text-3xl h6 mt-6 lg:text-7xl text-white leading-15 poppinsSemiBold text-center lg:mt-10">
+          <h1 className="text-3xl lg:text-6xl font-semibold leading-tight mt-6 lg:mt-10">
             Make more impact
-            <br /> with us
+            <br />
+            with us
           </h1>
-          <h3 className="text-sm lg:text-2xl leading-tight mt-1 text-white lg:leading-normal poppinsRegular text-center lg:mt-5">
-            At reach a hand we believe in the power of collaboration, you
-            partner <br /> with some of our programs or you can volunteer
+          <h3 className="text-sm lg:text-2xl mt-3 lg:mt-6 leading-tight lg:leading-normal">
+            At Reach A Hand we believe in the power of collaboration.
+            <br />
+            Partner with our programs or become a volunteer.
           </h3>
 
           <motion.button
-            whileHover={{ scale: "1.00" }}
-            whileTap={{ scale: "0.95", rotate: "2.5deg" }}
-            transition={{ duration: "0.125", ease: "easeInOut" }}
-            className="poppinsSemiBold px-8 py-2 lg:px-10 lg:py-4 bg-black text-white mt-5 lg:mt-10 mb-10 rounded-[30px] lg:text-lg justify-center hover:bg-white hover:text-darkBlue hover:border-darkMaroon hover:border-2"
+            whileHover={{ scale: 1.0 }}
+            whileTap={{ scale: 0.95, rotate: "2.5deg" }}
+            transition={{ duration: 0.125, ease: "easeInOut" }}
+            className="mt-6 lg:mt-10 px-8 py-3 lg:px-10 lg:py-4 bg-black text-white rounded-[30px] text-lg font-semibold hover:bg-white hover:text-black border-2 hover:border-black transition"
           >
             Get Involved
           </motion.button>
         </motion.div>
       </div>
-
-      <div className="mt-10 xl:px-10">
+      <div className="  w-full">
         <Footer />
       </div>
     </div>
   );
 };
-
 export default Impact;

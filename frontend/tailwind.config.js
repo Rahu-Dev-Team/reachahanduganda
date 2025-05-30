@@ -9,17 +9,21 @@ export default {
   ],
   theme: {
     extend: {
+      // ✅ Audrey font added
+      fontFamily: {
+        audrey: ['"Audrey"', "serif"],
+      },
 
       screens: {
-        'mobile-sm': '320px',   // Mobile Small
-        'mobile-md': '375px',   // Mobile Medium
-        'mobile-lg': '425px',   // Mobile Large
-        'tablet': '768px',      // Tablet
-        'laptop-sm': '1026px',  // Laptop Small
-        'laptop-lg': '1440px',  // Laptop Large
-        '4k': '2560px',         // 4K Display
+        "mobile-sm": "320px",
+        "mobile-md": "375px",
+        "mobile-lg": "425px",
+        tablet: "768px",
+        "laptop-sm": "1026px",
+        "laptop-lg": "1440px",
+        "4k": "2560px",
       },
-      
+
       colors: {
         color: {
           pink: "#ce8bcf",
@@ -50,23 +54,29 @@ export default {
           13: "#6C7275",
         },
       },
+
       letterSpacing: {
         tagline: ".15em",
       },
+
       spacing: {
         0.25: "0.0625rem",
         7.5: "1.875rem",
         15: "3.75rem",
       },
+
       opacity: {
         15: ".15",
       },
+
       transitionDuration: {
         DEFAULT: "200ms",
       },
+
       transitionTimingFunction: {
         DEFAULT: "linear",
       },
+
       zIndex: {
         1: "1",
         2: "2",
@@ -74,9 +84,11 @@ export default {
         4: "4",
         5: "5",
       },
+
       borderWidth: {
         DEFAULT: "0.0625rem",
       },
+
       backgroundImage: {
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
         "conic-gradient":
