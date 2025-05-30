@@ -38,7 +38,7 @@ const ProgramCard = ({ title, imgUrl, icon, subtext }) => {
               whileHover={{ scale: "1.0" }}
               whileTap={{ scale: "0.95", rotate: "2.5deg" }}
               transition={{ duration: "0.125", ease: "easeInOut" }}
-              className="poppinsRegular body-1 cursor-pointer"
+              className="garnetFont body-1 cursor-pointer"
             >
               Read more
             </motion.h3>

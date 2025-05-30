@@ -45,7 +45,7 @@ const Impact = () => {
           transition={{ duration: 0.5, delay: 0.25 }}
           className=" content-center text-center w-full mb-20 "
         >
-          <h1 className="h1 -mt-[22%] mb-4 lg:text-7xl poppinsSemiBold text-darkBlue leading-normal lg:-mt-[22%] absolute w-full">
+          <h1 className="h1 -mt-[22%] mb-4 lg:text-7xl poppinsBold uppercase text-darkBlue leading-normal lg:-mt-[22%] absolute w-full">
             Our impacts
           </h1>
           <h3 className="xl:text-xl md:body-1 body-2 md:px-[6%] xl:px-0 -mt-[10%] lg:text-3xl lg:-mt-[16%] poppinsRegular text-opacity-80 leading-normal w-full text-darkBlue absolute">
@@ -148,7 +148,7 @@ const Impact = () => {
       >
         <div className="lg:flex lg:flex-cols-2 gap-6 lg:h-[90%] w-full lg:mb-10">
           <div className="bg-color-darkBlue text-white p-1 lg:p-0 lg:w-[40%] rounded-[30px] lg:pl-10 lg:pr-30 ">
-            <p className="poppinsSemiBold h1 lg:text-7xl text-color-gold leading-normal text-center lg:text-left lg:mt-20">
+            <p className="garnetFont h3 lg:text-xl text-color-gold leading-normal text-center lg:text-left lg:mt-20">
               lets talk figures
             </p>
             <p className="body-1 p-4 text-center lg:text-left poppinsRegular md:w-full lg:text-2xl leading-normal lg:mt-5 lg:mb-20">
@@ -172,7 +172,7 @@ const Impact = () => {
         </div>
       </motion.div>
 
-      <div className="flex flex-cols-3 gap-2 w-[100%] justify-center mb-[4%] rounded-[30px] px-5 lg:px-20 mt-10 lg:mt-[2%]">
+      <div className="  flex flex-cols-3 gap-2 w-[100%] justify-center relative mb-[4%] rounded-[30px] px-5 lg:px-20 mt-10 lg:mt-[2%]">
         <motion.img
           variants={{
             hidden: { opacity: 0, y: 75 },
@@ -183,7 +183,7 @@ const Impact = () => {
           transition={{ duration: 0.5, delay: 0.25 }}
           src={home6}
           alt="HOME6"
-          className="object-stretch xl:object-cover w-full relative rounded-[30px] h-[250px] xl:h-0"
+          className="  object-stretch xl:object-cover w-full absolute inset-0 -z-1 rounded-[30px] h-[250px] xl:h-full"
         />
         <motion.div
           variants={{
@@ -193,13 +193,13 @@ const Impact = () => {
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="w-[80%] lg:w-[60%] content-center text-center justify-center items-center align-middle absolute lg:mt-[8%]"
+          className="w-[80%] lg:w-[60%] content-center text-center justify-center items-center align-middle  lg:mt-[8%]"
         >
-          <h1 className="xl:text-3xl h6 mt-6 lg:text-7xl text-white leading-15 poppinsSemiBold text-center lg:mt-10">
+          <h1 className="  xl:text-3xl h6 mt-6 lg:text-7xl  text-black leading-15 poppinsSemiBold text-center lg:mt-10">
             Make more impact
             <br /> with us
           </h1>
-          <h3 className="text-sm lg:text-2xl leading-tight mt-1 text-white lg:leading-normal poppinsRegular text-center lg:mt-5">
+          <h3 className="text-sm lg:text-2xl leading-tight mt-1 text-black lg:leading-normal poppinsRegular text-center lg:mt-5">
             At reach a hand we believe in the power of collaboration, you
             partner <br /> with some of our programs or you can volunteer
           </h3>
@@ -208,7 +208,7 @@ const Impact = () => {
             whileHover={{ scale: "1.00" }}
             whileTap={{ scale: "0.95", rotate: "2.5deg" }}
             transition={{ duration: "0.125", ease: "easeInOut" }}
-            className="poppinsSemiBold px-8 py-2 lg:px-10 lg:py-4 bg-black text-white mt-5 lg:mt-10 mb-10 rounded-[30px] lg:text-lg justify-center hover:bg-white hover:text-darkBlue hover:border-darkMaroon hover:border-2"
+            className="garnetFont px-8 py-2 lg:px-10 lg:py-4 bg-black text-white mt-5 lg:mt-10 mb-10 rounded-[30px] lg:text-lg justify-center hover:bg-blue-900 hover:text-white hover:border-darkMaroon hover:border-2"
           >
             Get Involved
           </motion.button>
