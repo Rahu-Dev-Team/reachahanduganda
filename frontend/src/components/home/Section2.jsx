@@ -52,7 +52,7 @@ const Section2 = () => {
               ease: "easein",
               duration: 1,
             }}
-            className='poppinsBold text-3xl py-3 laptop-sm:h1 text-white lg:pt-20'>
+            className='poppinsBold uppercase text-3xl py-3 laptop-sm:h1 text-white lg:pt-20'>
             Our impact
         </motion.div>
         <div className="mt-4 lg:mt-0 p-10 grid grid-cols-2 gap-4 lg:gap-2">
@@ -75,7 +75,7 @@ const Section2 = () => {
               ease: "easein",
               duration: 1,
             }}
-            className="py-1 px-6 text-sm xl:py-3 xl:px-8 mt-4 lg:mt-0 border-2 border-white rounded-[25px] poppinsSemiBold text-white hover:bg-black hover:text-white"
+            className="py-1 px-6 text-sm xl:py-3 xl:px-8 mt-4 lg:mt-0 border-2 border-white rounded-[25px] garnetFont text-white hover:bg-black hover:text-white"
           >
             Learn more
           </motion.button>
