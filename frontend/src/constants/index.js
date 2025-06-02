@@ -86,25 +86,25 @@ export const impacts = [
     id: "1",
     total: "94",
     word: "",
-    label: "Partnerships cultivated",
+    label: "Partners",
   },
   {
     id: "2",
     total: "1545",
     word: "",
-    label: "Community dialogues",
+    label: "Offline Reach",
   },
   {
     id: "3",
-    total: "10.4 million",
-    word: "million",
-    label: "People reach on social media",
+    total: "10m",
+    word: "",
+    label: "Online Reach",
   },
   {
     id: "4",
     total: "115385",
     word: "",
-    label: "Community dialogue",
+    label: "Services",
   },
 ];
 

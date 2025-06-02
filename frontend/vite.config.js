@@ -5,4 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "https://test.reachahand.org/",
   plugins: [react()],
+  assetsInclude: ["**/*.JPG"],
 });
