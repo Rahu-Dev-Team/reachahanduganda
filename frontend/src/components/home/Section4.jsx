@@ -15,7 +15,7 @@ const Section4 = () => {
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="h1 text-black poppinsBold"
+              className="h1 text-black poppinsBold uppercase"
             >
               Featured programs
             </motion.h1>

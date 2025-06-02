@@ -36,7 +36,7 @@ const NavBar = () => {
       initial="hidden"
       animate="visible"
       transition={{ duration: 0.5, delay: 0.25 }}
-      className={`bg-white w-full h-[100px] lg:h-[50px] fixed top-0 left-0 z-50 px-7 md:px-10 lg:px-[3.5%] ${
+      className={`bg-white w-full h-[100px] lg:h-[50px] fixed top-0 left-0 z-[100] px-7 md:px-10 lg:px-[3.5%] ${
         openNavigation ? "bg-white" : "bg-paleWhite backdrop-blur-sm"
       }`}
     >
@@ -64,7 +64,7 @@ const NavBar = () => {
           } flex flex-row top-[15px] py-10 px-4 justify-between items-center w-full fixed bg-black rounded-xl bg-opacity-75 text-lg poppinsSemiBold lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <div
-            className={`flex flex-col justify-center gap-8 top-5  items-center justify-center  poppinsRegular m-auto ${
+            className={`flex flex-col justify-center gap-8 top-5  items-center  poppinsRegular m-auto ${
               openNavigation ? "text-white" : "text-[#fff]"
             } lg:flex-row`}
           >

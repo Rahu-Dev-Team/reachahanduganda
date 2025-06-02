@@ -473,11 +473,11 @@ const AboutUs = () => {
             className="xl:w-[100%] xl:object-cover h-[400px] xl:h-[500px] relative rounded-[30px]"
           />
           <div className="px-10 xl:px-20">
-            <p className="poppinsBold h1 leading-tight xl:leading-normal text-center lg:text-left -mt-[65%] md:-mt-[30%] xl:-mt-[22%] absolute">
+            <p className=" ring-4 poppinsBold uppercase h1 leading-tight xl:leading-normal text-center lg:text-left -mt-[65%] md:-mt-[30%] xl:-mt-[22%] relative">
               Make more impact
               <br /> with us
             </p>
-            <p className="text-center lg:text-left poppinsRegular body-1 leading-tight -mt-[43%] pr-20 xl:leading-normal xl:-mt-[13%] xl:pr-60 absolute">
+            <p className="text-center lg:text-left poppinsRegular body-1 leading-tight -mt-[43%] pr-20 xl:leading-normal xl:-mt-[13%] xl:pr-60 ">
               RAHU inspires youth by introducing them to diverse role <br />
               models and mentors in fields like medicine, education, theatre and
               creative arts entrepreneurship
