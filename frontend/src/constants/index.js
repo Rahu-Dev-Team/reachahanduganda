@@ -92,19 +92,19 @@ export const impacts = [
     id: "2",
     total: "1545",
     word: "",
-    label: "Community dialogues",
+    label: "Offline Reach",
   },
   {
     id: "3",
     total: "10m",
     word: "",
-    label: "Social media reach",
+    label: "Online Reach",
   },
   {
     id: "4",
     total: "115385",
     word: "",
-    label: "Family planning services",
+    label: "Services",
   },
 ];
 
