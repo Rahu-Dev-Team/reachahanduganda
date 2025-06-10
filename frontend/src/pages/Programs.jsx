@@ -118,7 +118,7 @@ const Programs = () => {
           transition={{ duration: 0.5, delay: 0.25 }}
           className="content-center text-center w-full mb-20"
         >
-          <h1 className="h1 -mt-[22%] lg:text-7xl poppinsSemiBold text-darkBlue leading-normal lg:-mt-[22%] absolute w-full">
+          <h1 className="h1 -mt-[22%] lg:text-7xl poppinsBold uppercase text-darkBlue leading-normal lg:-mt-[22%] absolute w-full">
             Our programs
           </h1>
           <h3 className="text-sm -mt-[10%] lg:text-3xl xl:text-h4 lg:-mt-[16%] poppinsRegular text-opacity-80 leading-normal w-full text-darkBlue absolute">

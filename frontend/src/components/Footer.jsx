@@ -174,7 +174,7 @@ const Footer = () => {
             whileHover={{ scale: "1.05" }}
             whileTap={{ scale: "0.95", rotate: "2.5deg" }}
             transition={{ duration: "0.125", ease: "easeInOut" }}
-            className="py-1 px-4 lg:py-3 lg:px-10 text-[10px] md:body-1 border-2 border-white rounded-[25px] poppinsSemiBold text-color-lightBlue"
+            className="py-1 px-4 lg:py-3 lg:px-10 text-[10px] md:body-1 border-2 border-white rounded-[25px] garnetFont text-color-white"
           >
             Subscribe Newsletter
           </motion.button>
@@ -183,7 +183,7 @@ const Footer = () => {
               whileHover={{ scale: "1.05" }}
               whileTap={{ scale: "0.95", rotate: "2.5deg" }}
               transition={{ duration: "0.125", ease: "easeInOut" }}
-              className="poppinsSemiBold mt-3 lg:mt-10 text-[10px] md:body-1"
+              className=" py-1 px-4 lg:py-3 lg:px-10 garnetFont border-2 border-white rounded-[25px] mt-3 lg:mt-10 text-[10px] md:body-1"
             >
               Peer Educators Academy
             </motion.h3>
