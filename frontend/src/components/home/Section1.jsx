@@ -33,9 +33,9 @@ const Section1 = () => {
         transition={{
           delay: 0.2,
           x: { type: "spring", stiffness: 60 },
-          opacity: { duration: 1 },
+          opacity: { duration: 2},
           ease: "easein",
-          duration: 1,
+          duration: 2,
         }}
         className="bg-[#0e2d5c] mobile-sm:h-[80vh] laptop-sm:h-auto rounded-3xl relative overflow-hidden"
       >
