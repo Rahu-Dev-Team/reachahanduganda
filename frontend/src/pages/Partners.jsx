@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import line from "../assets/Artboard – 5.png";
 import cover from "../assets/Artboard – 23.jpg";
 import backdrop from "../assets/Artboard – 6.jpg";
-import backdrop2 from "../assets/Artboard – 15.jpg";
+import backdrop2 from "../assets/Web 1920 – 18.jpg";
 import backdrop3 from "../assets/Artboard – 17.jpg";
 import top from "../assets/Mask Group 62.png";
 import { useState } from "react";
@@ -75,24 +75,6 @@ const Partners = () => {
         <div className="-mt-[40%] mb-10 absolute w-full">
           <NavBar />
         </div>
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 0.5, delay: 0.25 }}
-          className=" content-center text-center w-full "
-        >
-          <h1 className="h1 poppinsSemiBold text-darkBlue leading-normal -mt-[22%] absolute w-full">
-            Our partners
-          </h1>
-          <h3 className="h4 -mt-[16%] poppinsRegular text-opacity-80 leading-normal w-full text-darkBlue absolute">
-            Each of RAHU's program, campaign and projects is
-            <br /> tailored to impact nuggets of information
-          </h3>
-        </motion.div>
 
         <motion.div
           variants={{
@@ -104,29 +86,14 @@ const Partners = () => {
           transition={{ duration: 0.8, delay: 0.25 }}
           className=""
         >
-          <img src={line} alt="line" className="w-full -mt-40 relative" />
+          <img src={line} alt="line" className="w-full -mt-50 relative" />
         </motion.div>
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 1, delay: 0.25 }}
-          className="w-full px-20 rounded-[30px] mt-2 relative"
-        >
-          <img
-            src={cover}
-            alt="cover"
-            className="w-full mt-0 xl:h-[600px] xl:object-cover rounded-[30px]"
-          />
-        </motion.div>
+
         <div className="absolute h-[400px] xl:h-[700px] justify-center items-center left-[12%] lg:left-[8%]">
           <img
             src={top}
             alt="cover"
-            className="w-full -mt-[45.8%] object-cover z-100 items-center"
+            className="w-full -mt-[45.8%] object-cover z-10 items-center"
           />
         </div>
 
@@ -155,7 +122,7 @@ const Partners = () => {
                 <h1 className="h3 poppinsSemiBold text-gray-900 leading-normal ">
                   Implementing partners
                 </h1>
-                <h3 className="h6 lg:text-[22px] poppinsRegular leading-normal pt-2">
+                <h3 className=" text-lg poppinsRegular leading-normal pt-2">
                   Strategic partners are how RAHU works in partnership with
                   other organisations <br /> with similar mission, as well as
                   communities to enhance synergies, sustainability <br />
@@ -202,7 +169,7 @@ const Partners = () => {
                 <h1 className="h3 poppinsSemiBold text-gray-900 leading-normal ">
                   Implementing/Supporting partners
                 </h1>
-                <h3 className="h6 lg:text-[22px] poppinsRegular leading-normal pt-2">
+                <h3 className=" text-lg poppinsRegular leading-normal pt-2">
                   Implementing partners are how RAHU works in partnership with
                   other organisations <br /> with similar mission, as well as
                   communities to enhance synergies, sustainability <br />
@@ -249,7 +216,7 @@ const Partners = () => {
                 <h1 className="h3 poppinsSemiBold text-gray-900 leading-normal ">
                   Strategic Supporting partners
                 </h1>
-                <h3 className="h6 lg:text-[22px] poppinsRegular leading-normal pt-2">
+                <h3 className="text-lg poppinsRegular leading-normal pt-2">
                   Corporate partners are how RAHU works in partnership with
                   other organisations <br /> with similar mission, as well as
                   communities to enhance synergies, sustainability <br />
@@ -296,7 +263,7 @@ const Partners = () => {
                 <h1 className="h3 poppinsSemiBold text-gray-900 leading-normal ">
                   Corporate partners
                 </h1>
-                <h3 className="h6 lg:text-[22px] poppinsRegular leading-normal pt-2">
+                <h3 className=" text-lg poppinsRegular leading-normal pt-2">
                   Corporate partners are how RAHU works in partnership with
                   other organisations <br /> with similar mission, as well as
                   communities to enhance synergies, sustainability <br />
@@ -357,18 +324,18 @@ const Partners = () => {
               alt="drop"
               className="w-[100%] object-cover h-[500px] relative rounded-[30px]"
             />
-            <div className="px-20">
-              <p className="poppinsBold text-6xl leading-normal text-left -mt-[22%] absolute">
+            <div className="px-20 text-center">
+              <p className=" text-3xl font-bold font-audrey leading-normal text-left -mt-[30%] absolute">
                 Make more impact
                 <br /> with us
               </p>
-              <p className="text-left poppinsRegular text-2xl leading-normal -mt-[13%] pr-60 absolute">
+              <p className="text-left poppinsRegular text-2xl leading-normal -mt-[23%] pr-60 absolute">
                 RAHU inspires youth by introducing them to diverse role <br />
                 models and mentors in fields like medicine, education, theatre
                 and creative arts entrepreneurship
               </p>
               <a href="/GetInvolved">
-                <button className="poppinsSemiBold px-8 py-4 bg-black absolute -mt-[7%] text-white border-2 border-black mb-20 rounded-[30px] text-lg justify-center hover:bg-white hover:text-darkBlue hover:border-darkMaroon hover:border-2">
+                <button className="poppinsSemiBold px-5 py-4 bg-black  -mt-[9%] absolute text-white border-2 border-black mb-30 rounded-[30px] text-lg  hover:bg-white hover:text-darkBlue hover:border-darkMaroon hover:border-2">
                   Get involved
                 </button>
               </a>
@@ -377,7 +344,7 @@ const Partners = () => {
         </motion.div>
       </div>
 
-      <div className="mt-10 px-20">
+      <div className="mt-10">
         <Footer />
       </div>
     </div>

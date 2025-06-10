@@ -48,10 +48,10 @@ const ContactUs = () => {
           transition={{ duration: 0.8, delay: 0.25 }}
           className="content-center text-center w-full mt-40"
         >
-          <h1 className="h1 poppinsSemiBold leading-normal text-darkBlue">
+          <h1 className="  text-3xl  poppinsSemiBold leading-normal">
             Get in touch with us
           </h1>
-          <h3 className="h5 xl:h4 xl:px-[20%] poppinsRegular leading-normal text-darkBlue">
+          <h3 className="text-gray-600 text-base">
             Each of RAHU's program, campaign and projects are tailored to impact
             nuggets of information
           </h3>
@@ -121,8 +121,8 @@ const ContactUs = () => {
                       />
                       <li className="mt-5 poppinsRegular h5 leading-normal mb-6 hover:text-color-gold">
                         Plot 7502, Block 244, <br />
-                        Heritage Village, Kasanga, <br />
-                        Ggaba road
+                        Lungujja, <br />
+                        Kalema Road
                       </li>
                     </div>
                   </ul>
@@ -132,7 +132,7 @@ const ContactUs = () => {
           </div>
         </motion.div>
       </div>
-      <div className="xl:px-20">
+      <div className=" w-full">
         <Footer />
       </div>
     </div>

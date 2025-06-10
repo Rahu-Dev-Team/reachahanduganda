@@ -70,9 +70,9 @@ const Events = () => {
           transition={{ duration: 0.5, delay: 0.25 }}
           className=" content-center text-center w-full "
         >
-          <div className=" leading-normal -mt-[22%] absolute w-full text-center ml-10 xl:pl-[20%]">
-            <h1 className="flex h1 text-color-darkBlue poppinsSemiBold leading-normal text-center">
-              Whats happening
+          <div className=" leading-normal -mt-[22%] absolute w-full text-center ml-10 xl:pl-[30%]">
+            <h1 className="flex h1 text-color-darkBlue poppinsSemiBold leading-normal text-center text-lg">
+              Trending News
               <span className="flex justify-items-center items-center px-4 p-2">
                 <img
                   src={user}
@@ -94,7 +94,7 @@ const Events = () => {
             </h1>
           </div>
 
-          <h3 className="h6 lg:h4 -mt-[12%] xl:-mt-[16%] poppinsRegular text-opacity-80 leading-normal w-full text-darkBlue absolute">
+          <h3 className="-mt-[12%] xl:-mt-[16%] poppinsRegular text-opacity-80 leading-normal w-full text-darkBlue absolute">
             Each of RAHU's program, campaign and projects is
             <br /> tailored to impact nuggets of information
           </h3>
@@ -236,7 +236,7 @@ const Events = () => {
           </button>
         </motion.div>
 
-        <div className="mt-10 xl:px-20">
+        <div className="w-full">
           <Footer />
         </div>
       </div>

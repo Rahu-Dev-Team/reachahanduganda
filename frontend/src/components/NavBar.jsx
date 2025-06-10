@@ -48,7 +48,7 @@ const NavBar = () => {
             transition={{ duration: "0.125", ease: "easeInOut" }}
             src={logo}
             alt="logo"
-            className="w-full md:w-full lg:w-full xl:w-full"
+            className="w-full md:w-full  lg:w-full xl:w-full"
           />
         </a>
         <div className="ml-auto lg:hidden" onClick={toggleNavigation}>
@@ -64,7 +64,7 @@ const NavBar = () => {
           } flex flex-row top-[15px] py-10 px-4 justify-between items-center w-full fixed bg-black rounded-xl bg-opacity-75 text-lg poppinsSemiBold lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <div
-            className={`flex flex-col justify-center gap-8 top-5  items-center justify-center  poppinsRegular m-auto ${
+            className={`flex flex-col justify-center gap-8 top-5  items-center  poppinsRegular m-auto ${
               openNavigation ? "text-white" : "text-[#fff]"
             } lg:flex-row`}
           >
