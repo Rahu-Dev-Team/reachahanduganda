@@ -24,7 +24,7 @@ const Section3 = () => {
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="h1 text-left text-black poppinsBold p-6"
+              className="h1 text-left text-black poppinsBold uppercase justify-center p-6"
             >
               What's happening at RAHU
             </motion.h1>

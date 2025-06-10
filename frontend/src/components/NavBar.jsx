@@ -36,7 +36,7 @@ const NavBar = () => {
       initial="hidden"
       animate="visible"
       transition={{ duration: 0.5, delay: 0.25 }}
-      className={`bg-white w-full h-[100px] lg:h-[50px] fixed top-0 left-0 z-50 px-7 md:px-10 lg:px-[3.5%] ${
+      className={`bg-white w-full h-[100px] lg:h-[50px] fixed top-0 left-0 z-[100] px-7 md:px-10 lg:px-[3.5%] ${
         openNavigation ? "bg-white" : "bg-paleWhite backdrop-blur-sm"
       }`}
     >
