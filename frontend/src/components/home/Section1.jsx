@@ -7,7 +7,6 @@ import home4 from "/Users/nkangi/Desktop/reachahanduganda/frontend/src/assets/pe
 import home6 from "/Users/nkangi/Desktop/reachahanduganda/frontend/src/assets/peers_6.jpg";
 import home7 from "/Users/nkangi/Desktop/reachahanduganda/frontend/src/assets/peers_7.jpg";
 import home8 from "/Users/nkangi/Desktop/reachahanduganda/frontend/src/assets/peers_8.jpg";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

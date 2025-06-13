@@ -23,19 +23,13 @@ import { PlayButton } from "@vidstack/react";
 import { PauseIcon, PlayIcon } from "@vidstack/react/icons";
 import "@vidstack/react/player/styles/base.css";
 import Modal from "../components/Modal";
-import heroImage from "../assets/Abouthero.jpg";
+import heroImage from "../assets/Web 1920 – 180.png";
 import campaignImage from "../assets/impact.jpg";
 import campaignImage1 from "/Users/nkangi/Desktop/reachahanduganda/frontend/src/assets/peers_8.jpg";
 import campaignImage2 from "../assets/we-one.jpg";
 import campaignImage3 from "../assets/getinvolved.jpg";
-import Mission from "../assets/mission.jpg";
-import Vision from "../assets/vision.jpg";
-import coreValues from "../assets/corevalues.jpg";
-import impactImage from "../assets/LJ4B5813 copy.png";
-import home4 from "../assets/aboutbg.jpg";
-import home6 from "../assets/Artboard – 3.jpg";
 
-const WhoWeArePage = () => {
+const AboutUs = () => {
   return (
     <div className="w-full bg-paleWhite rounded-[30px] content-center">
       <motion.img
