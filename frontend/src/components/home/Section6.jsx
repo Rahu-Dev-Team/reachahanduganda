@@ -217,7 +217,7 @@ const Section6 = () => {
         <div className="overflow-x-auto">
           <table className="min-w-full table-auto border-collapse font-kinetika text-sm">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="bg-blue-100">
                 <th className="border px-4 py-2 garnetFont text-black text-left">Metric</th>
                 <th className="border px-4 py-2 garnetFont text-black text-left">Value</th>
               </tr>

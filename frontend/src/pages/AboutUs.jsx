@@ -23,79 +23,19 @@ import { PlayButton } from "@vidstack/react";
 import { PauseIcon, PlayIcon } from "@vidstack/react/icons";
 import "@vidstack/react/player/styles/base.css";
 import Modal from "../components/Modal";
+import heroImage from "../assets/Abouthero.jpg";
+import campaignImage from "../assets/impact.jpg";
+import campaignImage1 from "/Users/nkangi/Desktop/reachahanduganda/frontend/src/assets/peers_8.jpg";
+import campaignImage2 from "../assets/we-one.jpg";
+import campaignImage3 from "../assets/getinvolved.jpg";
+import Mission from "../assets/mission.jpg";
+import Vision from "../assets/vision.jpg";
+import coreValues from "../assets/corevalues.jpg";
+import impactImage from "../assets/LJ4B5813 copy.png";
+import home4 from "../assets/aboutbg.jpg";
+import home6 from "../assets/Artboard – 3.jpg";
 
-const AboutUs = () => {
-  const [users, setUsers] = useState([]);
-  const [staff, setStaff] = useState([]);
-  const [cultural, setCultural] = useState([]);
-  const [board, setBoard] = useState([]);
-
-  const [selectedStaff, setSelectedStaff] = useState(null);
-
-  const handleStaffClick = (staffMember) => {
-    setSelectedStaff(staffMember);
-  };
-
-  const handleCloseModal = () => {
-    setSelectedStaff(null);
-  };
-
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
-  const playerRef = useRef(null);
-
-  const handlePlay = () => setIsPlaying(true);
-  const handlePause = () => setIsPlaying(false);
-  const handleMouseEnter = () => {
-    if (playerRef.current) {
-      playerRef.current.pause();
-      setIsPlaying(false);
-    }
-  };
-  const handleMouseLeave = () => {
-    // Do nothing to keep the video paused when the mouse leaves
-  };
-  const handleUnmute = () => {
-    if (playerRef.current) {
-      playerRef.current.muted = false;
-      setIsMuted(false);
-    }
-  };
-
-  useEffect(() => {
-    // Function to fetch users data from Laravel API
-    const fetchUsers = async () => {
-      try {
-        // Make GET request to your Laravel API endpoint using fetch
-        const response = await fetch("http://127.0.0.1:8000/api/profile"); // Update the URL with your actual API endpoint
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
-        const data = await response.json();
-        // Update state with users data from API response
-        setUsers(data);
-
-        // Filter users with category "Strategic"
-        const staff = data.filter((users) => users.category === "Staff");
-        setStaff(staff);
-
-        // Filter users with category "Implementing"
-        const cultural = data.filter(
-          (users) => users.category === "Cultural icon"
-        );
-        setCultural(cultural);
-
-        // Filter users with category "Corporate"
-        const board = data.filter((users) => users.category === "Board Member");
-        setBoard(board);
-      } catch (error) {
-        console.error("Error fetching users:", error);
-      }
-    };
-
-    // Call fetchPartners function when component mounts
-    fetchUsers();
-  }, []);
+const WhoWeArePage = () => {
   return (
     <div className="w-full bg-paleWhite rounded-[30px] content-center">
       <motion.img

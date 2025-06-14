@@ -24,7 +24,7 @@ const Section3 = () => {
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="h1 text-left text-black poppinsBold uppercase justify-center p-6"
+              className="h1 text-center text-black poppinsBold uppercase justify-center p-6"
             >
               What's happening at RAHU
             </motion.h1>
@@ -123,7 +123,7 @@ const Section3 = () => {
                     </span>
                   </div>
                 </div>
-                <div className="bg-color-green rounded-[30px] py-1">
+                <div className="bg-sky-700 rounded-[30px] py-1">
                   <button className="bg-white m-5 ml-10 rounded-[30px] gap-4 px-4 py-2 poppinsRegular text-n-7 flex  hover:text-color-darkMaroon hover:border-darkMaroon hover:border-2  cursor-pointer">
                     Blogs
                   </button>
