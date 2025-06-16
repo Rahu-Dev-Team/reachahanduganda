@@ -12,7 +12,7 @@ import "@vidstack/react/player/styles/base.css";
 import Modal from "../components/Modal";
 import heroImage from "../assets/Abouthero.jpg";
 import campaignImage from "../assets/impact.jpg";
-import campaignImage1 from "../assets/program-3.jpg";
+import campaignImage1 from "../assets/program-2.jpg";
 import campaignImage2 from "../assets/we-one.jpg";
 import campaignImage3 from "../assets/getinvolved.jpg";
 import Mission from "../assets/mission.jpg";

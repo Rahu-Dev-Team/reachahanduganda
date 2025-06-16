@@ -251,9 +251,8 @@ const Section6 = () => {
   return (
     <div className="map-page flex flex-col lg:flex-row">
       {/* Left info section */}
-      <div className="info-panel overflow-y-auto pr-4 lg:w-1/2">
-        <div className="floating-words font-procerus">Reach A Hand Uganda</div>
-        <h6 className="poppinsBold uppercase text-3xl mb-2">
+      <div className="bg-cyan-900 text-white overflow-y-auto p-4  lg:w-1/2">
+        <h6 className="poppinsBold uppercase text-3xl mb-2 p-10">
           Impact Overview (2019 - 2023)
         </h6>
 

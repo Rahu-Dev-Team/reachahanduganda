@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import rahu from "../assets/logo-global.png";
 import clinic from "../assets/images/DSC09024.jpg";
 import { IoMdMail } from "react-icons/io";
-import right from "../assets/images/DSC09244.jpg";
+import right from "../assets/peers_7.jpg";
 import { FaHandHoldingHeart } from "react-icons/fa6";
 import { TbBulbFilled } from "react-icons/tb";
 import first from "../assets/images/DSC092172.jpg";

@@ -1,8 +1,12 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import home1 from "../../assets/Web 1920 – 180.png";
-import home2 from "../../assets/you.jpg";
-import home3 from "../../assets/Web 1920 – 24.jpg";
+import home1 from "../../assets/peers_3.jpg";
+import home2 from "../../assets/peers_2.jpg";
+import home3 from "../../assets/peers_4.jpg";
+import home4 from "../../assets/peers_5.jpg";
+import home6 from "../../assets/peers_6.jpg";
+import home7 from "../../assets/peers_7.jpg";
+import home8 from "../../assets/peers_8.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,7 +25,7 @@ const Section1 = () => {
     arrows: false,
   };
 
-  const images = [home1, home2, home3];
+  const images = [home6, home7, home8];
   const images2 = [home1, home2, home3];
 
   return (
@@ -45,7 +49,7 @@ const Section1 = () => {
               <div key={index} className="relative w-full h-[100vh]">
                 <img
                   src={img}
-                  alt={`slide-${index}`}
+                  alt={"slide-${index}"}
                   className="absolute top-0 left-0 w-full h-full object-cover"
                 />
               </div>
@@ -88,9 +92,9 @@ const Section1 = () => {
           }}
           className="bg-[#0064e6] rounded-3xl relative flex flex-col justify-center items-start p-10"
           style={{
-            backgroundImage: `url(${home2})`,
+            backgroundImage: `url(${home4})`,
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "top center",
           }}
         >
           <div className="">
@@ -155,7 +159,7 @@ const Section1 = () => {
                   <div key={index} className="w-full h-[31rem]">
                     <img
                       src={img}
-                      alt={`slide-${index}`}
+                      alt={"slide-${index}"}
                       className="w-full h-full object-cover"
                     />
                   </div>

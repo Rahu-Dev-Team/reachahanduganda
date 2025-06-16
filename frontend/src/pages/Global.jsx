@@ -2,7 +2,7 @@ import React from "react";
 import rahu from "../assets/logo-global.png";
 import doctor from "../assets/images/dr.jpg";
 import center from "../assets/images/Artboard – 2.png";
-import right from "../assets/images/DSC09244.jpg";
+import right from "../assets/peers_7.jpg";
 import { motion } from "framer-motion";
 import one from "../assets/elements/backgrounds2.png";
 import two from "../assets/elements/backgrounds (3).png";

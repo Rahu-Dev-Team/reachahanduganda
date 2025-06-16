@@ -39,6 +39,24 @@ const Impact = () => {
             <NavBar />
           </div>
         </div>
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 0.25 }}
+          className=" content-center text-center w-full mb-20 "
+        >
+          <h1 className="h1 -mt-[22%] mb-4 lg:text-7xl poppinsBold uppercase text-darkBlue leading-normal lg:-mt-[22%] absolute w-full">
+            Our impacts
+          </h1>
+          <h3 className="xl:text-xl md:body-1 body-2 md:px-[6%] xl:px-0 -mt-[10%] lg:text-3xl lg:-mt-[16%] poppinsRegular text-opacity-80 leading-normal w-full text-darkBlue absolute">
+            Each of RAHU's program, campaign and projects is
+            <br /> tailored to impact nuggets of information
+          </h3>
+        </motion.div>
 
         {/* Hero Section */}
         <section

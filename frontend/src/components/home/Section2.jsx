@@ -51,7 +51,7 @@ const Section2 = () => {
             ease: "easein",
             duration: 1,
           }}
-          className="poppinsBold uppercase text-3xl p-10 laptop-sm:h1 text-white lg:pt-20 justify-center"
+          className="poppinsBold uppercase text-3xl py-3 laptop-sm:h1 text-white lg:pt-20"
         >
           Our impact
         </motion.div>
