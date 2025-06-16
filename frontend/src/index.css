@@ -9,7 +9,7 @@
 @font-face {
   font-family: "PoppinsRegular";
   src: local("PoppinsRegular"),
-    url("./fonts/Poppins-Regular.ttf") format("opentype");
+    url("./fonts/Intro-Book-Alt.ttf") format("opentype");
   font-weight: normal;
 }
 .poppinsRegular {
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "italic";
-  src: local("italic"), url("./fonts/Poppins-Italic.ttf") format("opentype");
+  src: local("italic"), url("./fonts/Intro-Book-Italic.ttf") format("opentype");
   font-weight: normal;
 }
 .italic {
@@ -28,7 +28,7 @@
 @font-face {
   font-family: "PoppinsSemiBold";
   src: local("PoppinsSemiBold"),
-    url("./fonts/Poppins-SemiBold.ttf") format("opentype");
+    url("./fonts/Intro-Bold-Alt.ttf") format("opentype");
   font-weight: normal;
 }
 .poppinsSemiBold {
@@ -37,11 +37,24 @@
 
 @font-face {
   font-family: "PoppinsBold";
-  src: local("PoppinsBold"), url("./fonts/Poppins-Bold.ttf") format("opentype");
+  src: local("PoppinsBold"),
+    url("./fonts/Smart Sans Std Bold.otf") format("opentype");
   font-weight: bold;
+  text-transform: uppercase;
 }
 .poppinsBold {
   font-family: PoppinsBold;
+}
+
+@font-face {
+  font-family: "GarnetCapitals";
+  src: url("./fonts/GarnetCapitals-Black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+.garnetFont {
+  font-family: "GarnetCapitals", sans-serif;
+  text-transform: uppercase;
 }
 
 @layer utilities {

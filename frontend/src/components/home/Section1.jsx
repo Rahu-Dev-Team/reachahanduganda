@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import home1 from "../../assets/Web 1920 – 180.png";
-import home2 from "/Users/nkangi/Desktop/reachahanduganda/frontend/src/assets/you.jpg";
+import home2 from "../../assets/you.jpg";
 import home3 from "../../assets/Web 1920 – 24.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -33,7 +33,7 @@ const Section1 = () => {
         transition={{
           delay: 0.2,
           x: { type: "spring", stiffness: 60 },
-          opacity: { duration: 2},
+          opacity: { duration: 2 },
           ease: "easein",
           duration: 2,
         }}
@@ -63,7 +63,7 @@ const Section1 = () => {
                 We recognize that young people's concern can only be addressed
                 by young people
               </p>
-              
+
               <a href="GetInvolved">
                 <button className="ring-2 ring-white text-darkBlue py-2 px-6 md:py-3 md:px-8 rounded-[25px] garnetFont hover:bg-black hover:text-white hover:border-2 hover:border-white">
                   Get involved
@@ -148,30 +148,27 @@ const Section1 = () => {
 
           {/* Our Events */}
 
-          
+          <div className=" rounded-3xl h-full overflow-hidden relative">
+            <div className="">
+              <Slider ref={sliderRef} {...settings}>
+                {images2.map((img, index) => (
+                  <div key={index} className="w-full h-[31rem]">
+                    <img
+                      src={img}
+                      alt={`slide-${index}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </Slider>
+            </div>
 
-        <div className=" rounded-3xl h-full overflow-hidden relative">
-          <div className="">
-            <Slider ref={sliderRef} {...settings}>
-              {images2.map((img, index) => (
-                <div key={index} className="w-full h-[31rem]">
-                  <img
-                    src={img}
-                    alt={`slide-${index}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </Slider>
+            <div className="absolute inset-0 flex items-end justify-center p-6">
+              <button className="w-2/3 text-center rounded-full py-3 px-3 ring-2 ring-white garnetFont text-white hover:bg-black transition duration-300">
+                Our Events
+              </button>
+            </div>
           </div>
-
-          <div className="absolute inset-0 flex items-end justify-center p-6">
-            <button className="w-2/3 text-center rounded-full py-3 px-3 ring-2 ring-white garnetFont text-white hover:bg-black transition duration-300">
-              Our Events
-            </button>
-          </div>
-
-        </div>
         </motion.div>
       </div>
     </div>

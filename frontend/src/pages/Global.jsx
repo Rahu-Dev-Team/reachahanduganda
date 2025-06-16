@@ -4,7 +4,7 @@ import doctor from "../assets/images/dr.jpg";
 import center from "../assets/images/Artboard – 2.png";
 import right from "../assets/images/DSC09244.jpg";
 import { motion } from "framer-motion";
-import one from "../assets/elements/backgrounds (2).png";
+import one from "../assets/elements/backgrounds2.png";
 import two from "../assets/elements/backgrounds (3).png";
 import three from "../assets/elements/backgrounds (4).png";
 import background from "../assets/elements/backgrounds (9).png";
