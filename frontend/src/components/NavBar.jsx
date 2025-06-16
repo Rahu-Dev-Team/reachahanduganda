@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logos (2).png";
+import logo from "../assets/Rahulogo.png";
 import { navLinks } from "../constants";
 import { motion } from "framer-motion";
 import { IoMenu, IoClose } from "react-icons/io5";
@@ -41,16 +41,15 @@ const NavBar = () => {
       }`}
     >
       <div className="flex bg-[#e5f3ff] lg:h-[120px] items-center rounded-b-[30px] px-10 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a href="/" className="block mt-5 rounded-xl lg:mt-2">
-          <motion.img
-            whileHover={{ scale: "1.00" }}
-            whileTap={{ scale: "0.95", rotate: "2.5deg" }}
-            transition={{ duration: "0.125", ease: "easeInOut" }}
-            src={logo}
-            alt="logo"
-            className="w-full md:w-full  lg:w-full xl:w-full"
-          />
-        </a>
+        <motion.img
+          whileHover={{ scale: 1.0 }}
+          whileTap={{ scale: 0.95, rotate: "2.5deg" }}
+          transition={{ duration: 0.125, ease: "easeInOut" }}
+          src={logo}
+          alt="logo"
+          className=" max-h-16 object-contain"
+        />
+
         <div className="ml-auto lg:hidden" onClick={toggleNavigation}>
           {openNavigation ? (
             <IoClose size={40} className="text-black cursor-pointer" />

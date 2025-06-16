@@ -34,10 +34,10 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/" element={<Home />} />
-          <Route path="/Programs" element={<Programs />} />
           <Route path="/Impact" element={<Impact />} />
           <Route path="/GetRAHU" element={<GetRAHU />} />
           <Route path="/ABoutRAHU" element={<ABoutRAHU />} />
+          <Route path="/Programs" element={<Programs />} />
           <Route path="/Global" element={<Global />} />
           <Route path="/Partners" element={<Partners />} />
           <Route path="/AboutUs" element={<AboutUs />} />

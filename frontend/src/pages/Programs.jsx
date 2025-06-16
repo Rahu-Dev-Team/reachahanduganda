@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import line from "../assets/Artboard – 5.png";
 import cover from "../assets/drop-yellow.jpg";
 import top from "../assets/Group 202.png";
-import backdrop from "../assets/Artboard – 6.jpg";
+import backdrop from "../assets/Artboard – 14.jpg";
 import { useNavigate } from "react-router-dom";
 import { FaRegPlayCircle } from "react-icons/fa";
 import ReactPlayer from "react-player";
@@ -92,7 +92,7 @@ const Programs = () => {
 
   return (
     <div className="w-full ">
-      <div className="w-full rounded-[30px] content-center text-center">
+      <div className=" w-full rounded-[30px] content-center text-center">
         <motion.img
           variants={{
             hidden: { opacity: 0, y: 75 },
@@ -125,56 +125,17 @@ const Programs = () => {
             Each of RAHU's program, campaign and projects is
             <br /> tailored to impact nuggets of information
           </h3>
+          <div className="absolute inset-0 flex justify-center items-center pt-10 mt-10">
+            <FaRegPlayCircle
+              size={100}
+              className="fill-orange-500 cursor-pointer animate-pulse-pop"
+              onClick={handlePlayClick}
+            />
+          </div>
         </motion.div>
 
         <div className="">
-          <motion.div
-            variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 0.8, delay: 0.25 }}
-            className=""
-          >
-            <img
-              src={line}
-              alt="line"
-              className="w-full lg:-mt-40 object-cover relative"
-            />
-          </motion.div>
-
           <div className="relative" onMouseMove={handleMouseMove}>
-            <motion.div
-              variants={{
-                hidden: { opacity: 0, y: 75 },
-                visible: { opacity: 1, y: 0 },
-              }}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 1, delay: 0.25 }}
-              className="w-full px-5 xl:px-20 rounded-[30px] mt-2 relative"
-            >
-              <img
-                src={cover}
-                alt="cover"
-                className="w-full mt-0 xl:h-[600px] xl:object-cover rounded-[30px]"
-              />
-            </motion.div>
-            <div className="absolute xl:h-[600px] justify-center items-center lg:left-[4%]">
-              <img
-                src={top}
-                alt="cover"
-                className="xl:w-full px-10 -mt-[43.7%] xl:-mt-[46.4%] xl:object-cover xl:h-[800px] z-100 items-center"
-              />
-              <FaRegPlayCircle
-                size={100}
-                className="fill-white cursor-pointer xl:-mt-40 xl:ml-[51%]"
-                onClick={handlePlayClick}
-              />
-            </div>
-
             {showPopup && (
               <motion.div
                 variants={{
@@ -407,7 +368,7 @@ const Programs = () => {
         </div>
       </div>
 
-      <div className="mt-10 xl:px-20">
+      <div className="mt-10">
         <Footer />
       </div>
     </div>

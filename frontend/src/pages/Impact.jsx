@@ -30,39 +30,24 @@ const Impact = () => {
   return (
     <div className="relative font-sans bg-white text-gray-800 overflow-hidden">
       {/* Background Animations */}
-      <Arrow />
       {/* Foreground Content */}
       <div className="relative z-10">
-        {/* Navbar */}
-        <div className="content-center text-center w-full">
-          <div className="-mt-[40%] mb-10 absolute w-full">
-            <NavBar />
-          </div>
-        </div>
-        <motion.div
+        {/* Hero Section */}
+        <motion.img
           variants={{
             hidden: { opacity: 0, y: 75 },
             visible: { opacity: 1, y: 0 },
           }}
           initial="hidden"
           animate="visible"
-          transition={{ duration: 0.5, delay: 0.25 }}
-          className=" content-center text-center w-full mb-20 "
-        >
-          <h1 className="h1 -mt-[22%] mb-4 lg:text-7xl poppinsBold uppercase text-darkBlue leading-normal lg:-mt-[22%] absolute w-full">
-            Our impacts
-          </h1>
-          <h3 className="xl:text-xl md:body-1 body-2 md:px-[6%] xl:px-0 -mt-[10%] lg:text-3xl lg:-mt-[16%] poppinsRegular text-opacity-80 leading-normal w-full text-darkBlue absolute">
-            Each of RAHU's program, campaign and projects is
-            <br /> tailored to impact nuggets of information
-          </h3>
-        </motion.div>
-
-        {/* Hero Section */}
-        <section
-          className="relative h-[90vh] bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        ></section>
+          transition={{ duration: 0.2, delay: 0.25 }}
+          src={heroImage}
+          alt="backdrop"
+          className="w-full relative lg:mt-9 mt-20 object-cover"
+        />
+        <div className="-mt-[40%] mb-10 absolute w-full">
+          <NavBar />
+        </div>
 
         {/* About Section */}
         <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center bg-white">

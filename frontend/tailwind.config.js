@@ -13,6 +13,15 @@ export default {
       fontFamily: {
         audrey: ['"Audrey"', "serif"],
       },
+      animation: {
+        "pulse-pop": "pulsePop 1.5s infinite ease-in-out",
+      },
+      keyframes: {
+        pulsePop: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.2)" },
+        },
+      },
 
       screens: {
         "mobile-sm": "320px",

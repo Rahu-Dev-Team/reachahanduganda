@@ -27,12 +27,6 @@ import sixth from "../assets/SVG/Asset 119-8.png";
 
 export const navLinks = [
   {
-    id: "1",
-    href: "Programs",
-    label: "Programs",
-    subLinks: [],
-  },
-  {
     id: "2",
     href: "Impact",
     label: "Impact",
@@ -42,6 +36,12 @@ export const navLinks = [
     id: "3",
     href: "AboutUs",
     label: "About Us",
+    subLinks: [],
+  },
+  {
+    id: "1",
+    href: "Programs",
+    label: "Programs",
     subLinks: [],
   },
   { id: "4", href: "Partners", label: "Partners", subLinks: [] },
