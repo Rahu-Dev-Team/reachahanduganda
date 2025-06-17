@@ -22,6 +22,7 @@ const Home = () => {
           <Section4 />
           <Section6 />
           <Section5 />
+          <Section7 />
         </div>
       </div>
       <div className="w-full">
