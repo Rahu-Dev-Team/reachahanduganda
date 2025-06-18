@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useEffect, useRef, useState } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
@@ -24,12 +23,12 @@ import { PlayButton } from "@vidstack/react";
 import { PauseIcon, PlayIcon } from "@vidstack/react/icons";
 import "@vidstack/react/player/styles/base.css";
 import Modal from "../components/Modal";
-import heroImage from "../assets/hero.jpg";
-import campaignImage from "../assets/campaign.jpg";
-import historyImage from "../assets/history.jpg";
-import povertyImage from "../assets/poverty.jpg";
-import equityImage from "../assets/equity.jpg";
-import climateImage from "../assets/climate.jpg";
+import heroImage from "../assets/Web 1920 – 9.jpg";
+import campaignImage from "../assets/program-2.jpg";
+import historyImage from "../assets/Web 1920 – 16.jpg";
+import povertyImage from "../assets/Web 1920 – 19.jpg";
+import equityImage from "../assets/Web 1920 – 20.jpg";
+import climateImage from "../assets/Web 1920 – 21.jpg";
 
 const WhoWeArePage = () => {
   return (
@@ -140,7 +139,7 @@ const WhoWeArePage = () => {
             {
               title: "Defend the Planet",
               img: climateImage,
-              desc: "The world’s poorest suffer most from the climate crisis, despite contributing the least.",
+              desc: "The world's poorest suffer most from the climate crisis, despite contributing the least.",
             },
           ].map(({ title, img, desc }, i) => (
             <div key={i} className="bg-white p-6 rounded-lg shadow-md">
