@@ -16,7 +16,7 @@ import Impactmap from "../components/Impact/ImpactMap";
 import ThreeBackground from "../components/global/ThreeBackground";
 
 import program from "../assets/program-1.jpg";
-import heroImage from "../assets/impactphoto.jpg";
+import heroImage from "../assets/peers_6.jpg"; //impactphoto
 import home6 from "../assets/Artboard – 3.jpg";
 
 const Impact = () => {
@@ -49,7 +49,6 @@ const Impact = () => {
         <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center bg-white">
           <div className="relative">
             {/* Background animation absolutely positioned */}
-          
 
             {/* Text content with higher z-index */}
             <div className="relative z-10">
