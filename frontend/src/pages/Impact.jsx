@@ -1,8 +1,6 @@
-import React from "react";
 import "@vidstack/react/player/styles/base.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import ImpactDetails from "../components/ImpactDetails";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import {
@@ -16,8 +14,6 @@ import { PauseIcon, PlayIcon } from "@vidstack/react/icons";
 import Section2 from "../components/home/Section2";
 import Impactmap from "../components/Impact/ImpactMap";
 import ThreeBackground from "../components/global/ThreeBackground";
-import AnimatedBackground from "../components/global/AnimatedBackground";
-import Arrow from "../components/global/Arrow";
 
 import program from "../assets/program-1.jpg";
 import heroImage from "../assets/impactphoto.jpg";
