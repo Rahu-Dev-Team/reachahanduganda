@@ -4,7 +4,7 @@ import { navLinks } from "../constants";
 import { motion } from "framer-motion";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useLocation } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 const NavBar = () => {
   const location = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -41,7 +41,9 @@ const NavBar = () => {
       }`}
     >
       <div className="flex bg-[#e5f3ff] lg:h-[120px] items-center rounded-b-[30px] px-10 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <motion.img
+       
+        <Link to = "/" className="hover:cursor-pointer" >
+         <motion.img
           whileHover={{ scale: 1.0 }}
           whileTap={{ scale: 0.95, rotate: "2.5deg" }}
           transition={{ duration: 0.125, ease: "easeInOut" }}
@@ -49,6 +51,7 @@ const NavBar = () => {
           alt="logo"
           className=" max-h-16 object-contain"
         />
+        </Link>
 
         <div className="ml-auto lg:hidden" onClick={toggleNavigation}>
           {openNavigation ? (

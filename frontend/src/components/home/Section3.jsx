@@ -26,7 +26,7 @@ const Section3 = () => {
           transition={{ duration: 0.5, delay: 0.25 }}
           className="h1 text-center text-black poppinsBold uppercase justify-center p-6"
         >
-          What's happening at RAHU
+          Trending News at Rahu
         </motion.h1>
         <div className="grid grid-cols-1 gap-4 laptop-sm:grid lg:grid-cols-3 md:grid-cols-2">
           <div className="rounded-[30px] grid grid-rows-2 gap-4">

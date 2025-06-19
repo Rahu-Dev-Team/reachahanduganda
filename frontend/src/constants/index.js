@@ -255,7 +255,7 @@ export const ContactLinks = [
       { name: "+256 414 697 037" },
       { name: "info@reachahand.org" },
       {
-        name: "Plot 7502, Block 244, Heritage Village, Kasanga, Ggaba road",
+        name: "Plot 7502, Block 244,Lungujja,Kalema Road",
       },
       { name: "Follow us" },
     ],

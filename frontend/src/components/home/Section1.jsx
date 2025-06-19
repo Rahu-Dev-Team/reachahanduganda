@@ -10,6 +10,7 @@ import home8 from "../../assets/peers_8.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { ChatEngine } from "react-chat-engine";
 
 const Section1 = () => {
   const sliderRef = useRef(null);

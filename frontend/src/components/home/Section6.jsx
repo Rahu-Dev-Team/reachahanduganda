@@ -450,11 +450,13 @@ const Section6 = () => {
             zoom={7}
             scrollWheelZoom={true}
             style={{ height: "100%", width: "100%" }}
-            maxBounds={ugandaBounds}
             minZoom={6}
             maxZoom={12}
-            bounds={ugandaBounds}
-            boundsOptions={{ padding: [50, 50] }}
+            maxBounds={[
+              [-2.0, 28.0], // Southwest coordinates (expanded bounds)
+              [5.0, 35.0], // Northeast coordinates (expanded bounds)
+            ]}
+            maxBoundsViscosity={0.5} // Makes bounds elastic (0.5 = medium elasticity)
           >
             <TileLayer
               attribution='© <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'

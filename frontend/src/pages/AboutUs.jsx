@@ -64,7 +64,7 @@ const WhoWeArePage = () => {
           <h2 className="text-5xl font-bold font-audrey text-center p-10 text-blue-800">
             Who are we ?
           </h2>
-          <p className="text-gray-600  text-lg max-w-4xl mx-auto">
+          <p className="text-gray-600  text-lg max-w-4xl mx-auto poppinsSemiBold">
             Reach A Hand Uganda (RAHU) is an Indigenous Youth-centered,
             non-profit organisation. Founded in 2011, with a vision to create a
             world of young people making informed choices, RAHU’s work is
@@ -83,7 +83,7 @@ const WhoWeArePage = () => {
             the Hand Print!);
           </p>
           <br></br>
-          <p className="text-gray-600 text-lg max-w-4xl mx-auto">
+          <p className="text-gray-600 text-lg max-w-4xl mx-auto poppinsSemiBold">
             Through innovative campaigns, strategic partnerships, and youth-led
             initiatives, RAHU amplifies young voices, supports informed
             decision-making, and builds inclusive spaces where every young
@@ -102,10 +102,10 @@ const WhoWeArePage = () => {
         }}
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-4xl  font-bold font-audrey text-black text-center mb-10">
+          <h2 className="text-4xl md:text-4xl poppinsSemiBold font-bold font-audrey text-black text-center mb-10">
             How Do We Create Change?
           </h2>
-          <p className="text-lg max-w-4xl   text-black mx-auto">
+          <p className="text-lg max-w-4xl poppinsSemiBold  text-black mx-auto">
             Our efforts are timely to make a contribution to ensuring that every
             young person in Uganda can access the accurate information to aid
             and direct them in taking that crucial life decision regarding their
@@ -184,7 +184,7 @@ const WhoWeArePage = () => {
 
       {/* Our Issues */}
       <section className=" py-16 px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold font-audrey text-blue-800 mb-10">
+        <h2 className="text-3xl md:text-4xl poppinsSemiBold font-bold font-audrey text-blue-800 mb-10">
           What we stand for
         </h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-lg">
@@ -248,7 +248,7 @@ const WhoWeArePage = () => {
             <br />
             with us
           </h1>
-          <h3 className="text-sm lg:text-2xl mt-3 lg:mt-6 leading-tight lg:leading-normal">
+          <h3 className="text-sm lg:text-2xl mt-3 lg:mt-6 poppinsSemiBold leading-tight lg:leading-normal">
             At Reach A Hand we believe in the power of collaboration.
             <br />
             Partner with our programs or become a volunteer.
@@ -258,7 +258,7 @@ const WhoWeArePage = () => {
             whileHover={{ scale: 1.0 }}
             whileTap={{ scale: 0.95, rotate: "2.5deg" }}
             transition={{ duration: 0.125, ease: "easeInOut" }}
-            className="mt-6 lg:mt-10 px-8 py-3 lg:px-10 lg:py-4 bg-black text-white rounded-[30px] text-lg font-semibold hover:bg-white hover:text-black border-2 hover:border-black transition"
+            className="mt-6 lg:mt-10 px-8 py-3 lg:px-10 lg:py-4 garnetFont bg-black text-white rounded-[30px] text-lg font-semibold hover:bg-white hover:text-black border-2 hover:border-black transition"
           >
             Get Involved
           </motion.button>

@@ -53,26 +53,26 @@ const Impact = () => {
         <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center bg-white">
           <div className="relative">
             {/* Background animation absolutely positioned */}
-            <ThreeBackground />
+          
 
             {/* Text content with higher z-index */}
             <div className="relative z-10">
-              <p className="text-4xl font-bold font-audrey text-center text-blue-800 uppercase mb-2">
+              <p className="text-4xl font-bold font-audrey poppinsSemiBold text-center text-blue-800 uppercase mb-2">
                 The Impact
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
+              <h2 className="text-3xl md:text-4xl poppinsSemiBold font-bold leading-tight mb-4">
                 Our Promise To Uphold SRHR
               </h2>
-              <p className="text-gray-600 text-sm mb-4">
+              <p className="text-gray-600 text-sm poppinsSemiBold mb-4">
                 Among Young people and Uganda at large for the{" "}
                 <span className="text-red-600 font-bold">15+ Years</span>
               </p>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 poppinsSemiBold text-base">
                 Reach a Hand Uganda (RAHU) started in 2011 as a weekend outreach
                 program founded by Humphrey Nabimanya to address HIV/AIDS and
                 other sexual health issues among young people.
               </p>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 poppinsSemiBold text-base">
                 RAHU inspires youth by introducing them to diverse role models
                 and mentors in fields like medicine, education, theatre, and
                 creative arts entrepreneurship.
@@ -118,7 +118,7 @@ const Impact = () => {
 
         {/* Section2 and Map Side by Side */}
         <div>
-          <h2 className="text-4xl font-bold font-audrey text-center text-blue-800">
+          <h2 className="text-4xl font-bold font-audrey garnetFont text-center text-blue-800">
             OUR REACH ACROSS UGANDA
           </h2>
           <div className="w-screen flex flex-col md:flex-row">
@@ -157,7 +157,7 @@ const Impact = () => {
               <br />
               with us
             </h1>
-            <h3 className="text-sm lg:text-2xl mt-3 lg:mt-6 leading-tight lg:leading-normal">
+            <h3 className="text-sm lg:text-2xl mt-3 poppinsSemiBold lg:mt-6 leading-tight lg:leading-normal">
               At Reach A Hand we believe in the power of collaboration.
               <br />
               Partner with our programs or become a volunteer.
@@ -167,7 +167,7 @@ const Impact = () => {
               whileHover={{ scale: 1.0 }}
               whileTap={{ scale: 0.95, rotate: "2.5deg" }}
               transition={{ duration: 0.125, ease: "easeInOut" }}
-              className="mt-6 lg:mt-10 px-8 py-3 lg:px-10 lg:py-4 bg-black text-white rounded-[30px] text-lg font-semibold hover:bg-white hover:text-black border-2 hover:border-black transition"
+              className="mt-6 lg:mt-10 px-8 py-3 lg:px-10 lg:py-4 garnetFont bg-black text-white rounded-[30px] text-lg font-semibold hover:bg-white hover:text-black border-2 hover:border-black transition"
             >
               Get Involved
             </motion.button>
