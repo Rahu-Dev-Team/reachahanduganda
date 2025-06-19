@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { thematic } from "../constants";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import line from "../assets/images/prog2.jpg"; //prog1
-import cover from "../assets/images/prog2.jpg";
-import top from "../assets/images/prog7.jpeg";
+import line from "../assets/images/prog7.jpg"; //prog1
+import cover from "../assets/images/prog7.jpg";
+import top from "../assets/images/prog7.jpg";
 import backdrop from "../assets/images/prog5.jpg";
 import { useNavigate } from "react-router-dom";
 import { FaRegPlayCircle } from "react-icons/fa";
